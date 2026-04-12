@@ -1,11 +1,10 @@
 import os
 import json
 import ujson
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from text_processing import process
+from tfidf_model import build_tfidf
 
 tfidf = TfidfVectorizer()
 
@@ -23,48 +22,40 @@ for item in scraper_result:
 
 with open('publication_list_stemmed.json', 'r') as f:   doc = f.read()
 pub_list_stemmed = ujson.loads(doc)
+tfidf, tfidf_matrix = build_tfidf(pub_list_stemmed)
 
 with open('publication_indexed_dictionary.json', 'r') as f: doc = f.read()
 data_dict = ujson.loads(doc)
 
-#StopWord PreDefinition
-STOPWORDS = stopwords.words('english')
-stemmer = PorterStemmer()
 
 collective_output = {}
 
 
-def search_data(inp):
-    inp = inp.lower().split()
-    output = {}
-    pointer = []
-    for token in inp:
-        stem_temp = ""
-        stem_word_file = []
-        temp_file = []
+def search_data(query):
+    query_tokens = process(query)
+    query_str = " ".join(query_tokens)
 
-        word_list = word_tokenize(token)
-        for x in word_list:
-            if x not in STOPWORDS:
-                stem_temp += stemmer.stem(x) + " "
-        stem_word_file.append(stem_temp)
+    query_vec = tfidf.transform([query_str])
+    cosine_output = cosine_similarity(tfidf_matrix, query_vec)
 
-        pointer = data_dict.get(stem_word_file[0].strip())
-        if pointer == None:
-            output = {}
-        else:
-            for j in pointer:   temp_file.append(pub_list_stemmed[j])
-            temp_file = tfidf.fit_transform(temp_file)
-            cosine_output = cosine_similarity(temp_file, tfidf.transform(stem_word_file))
-            for j in pointer:   output[j] = cosine_output[pointer.index(j)]
+    scores = []
+    for i, score in enumerate(cosine_output):
+        scores.append((i, float(score[0])))
 
-        collective_output.update(output)
+    scores = sorted(scores, key=lambda x: x[1], reverse=True)
 
-    sorting = sorted(collective_output.items(), key=min, reverse=True)
-    print(f"SEARCH QUERY: {" ".join(inp)}")
-    print(f"{len(collective_output)} searches found.\n")
-    for (a, b) in sorting:
-        print(f"{pub_name[a]}\n{pub_url[a]}\n{pub_author[a]}\n-------")
+    results = []
+
+    for doc_id, score in scores[:10]:
+        if score > 0:
+            results.append({
+                "name": pub_name[doc_id],
+                "url": pub_url[doc_id],
+                "author": pub_author[doc_id],
+                "score": round(score, 4)
+            })
+
+    return results
 
 
 search_data("art")

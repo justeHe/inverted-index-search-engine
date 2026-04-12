@@ -1,9 +1,8 @@
 import os
 import ujson
 import json
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
+import nltk
+from text_processing import process
 
 
 with open('scraper_results.json', 'r') as f:
@@ -21,47 +20,26 @@ for item in data_dict:
     pub_author.append(item['author'])
 
 
-#StopWord PreDefinition
-STOPWORDS = stopwords.words('english')
-stemmer = PorterStemmer()
-
 
 pub_list = []
 pub_list_special_rm = []
-pub_list_stemmed =[]
 
-#Remove all Special Chars
-special_chars = '''!()--[]{};:'"\\, <>./?@#$%^&*_~0123456789+='''''
-
-for file in pub_name:
-    word_sc_rm = ""
-    if len(file.split()) ==1 :
-        pub_list_special_rm.append(file)
-    else:
-        for a in file:
-            if a in special_chars:
-                word_sc_rm += ' '
-            else:
-                word_sc_rm += a
-        pub_list_special_rm.append(word_sc_rm)
-
-
-for name in pub_list_special_rm:
-    words = word_tokenize(name)
-    stem_word = ""
-    for a in words:
-        if a.lower() not in STOPWORDS:
-            stem_word += stemmer.stem(a) + ' '
-    pub_list_stemmed.append(stem_word.lower())
 
 data_dict = {}
+pub_list_stemmed = []
 
-for a in range(len(pub_list_stemmed)):
-    for b in pub_list_stemmed[a].split():
-        if b not in data_dict:
-            data_dict[b] = [a]
-        else:
-            data_dict[b].append(a)
+for i in range(len(pub_name)):
+    tokens = process(pub_name[i])
+    pub_list_stemmed.append(" ".join(tokens))
+
+    tf_count = {}
+    for t in tokens:
+        tf_count[t] = tf_count.get(t, 0) + 1
+
+    for term, tf in tf_count.items():
+        if term not in data_dict:
+            data_dict[term] = []
+        data_dict[term].append((i, tf))
 
 with open('publication_list_stemmed.json', 'w') as f:
     json_str = ujson.dumps(pub_list_stemmed)

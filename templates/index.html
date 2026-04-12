@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search Engine</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f6f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 顶部标题 */
+    .header {
+        text-align: center;
+        padding: 40px 20px 10px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 32px;
+        color: #333;
+    }
+
+    /* 搜索框区域 */
+    .search-box {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 40px;
+    }
+
+    .search-box input {
+        width: 50%;
+        padding: 14px 18px;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        outline: none;
+        font-size: 16px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .search-box button {
+        margin-left: 10px;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 30px;
+        background: #4a90e2;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .search-box button:hover {
+        background: #357bd8;
+    }
+
+    /* 结果区 */
+    .results {
+        width: 70%;
+        margin: auto;
+    }
+
+    .card {
+        background: white;
+        padding: 16px 20px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 6px;
+    }
+
+    .author {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .link a {
+        color: #4a90e2;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .score {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 3px 8px;
+        background: #e8f0fe;
+        color: #1a73e8;
+        border-radius: 12px;
+        font-size: 12px;
+    }
+
+    /* 空结果 */
+    .empty {
+        text-align: center;
+        color: #888;
+        margin-top: 50px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🔍 Inverted Index Search Engine</h1>
+</div>
+
+<!-- 搜索框 -->
+<form method="POST" class="search-box">
+    <input name="query" placeholder="Search books, authors..." value="{{ query }}">
+    <button type="submit">Search</button>
+</form>
+
+<!-- 结果 -->
+<div class="results">
+
+{% if results|length == 0 and query %}
+    <div class="empty">No results found 😢</div>
+{% endif %}
+
+{% for r in results %}
+    <div class="card">
+        <div class="title">{{ r.name }}</div>
+        <div class="author">👤 {{ r.author }}</div>
+        <div class="link">
+            🔗 <a href="{{ r.url }}" target="_blank">Visit</a>
+        </div>
+        <div class="score">Score: {{ r.score }}</div>
+    </div>
+{% endfor %}
+
+</div>
+
+</body>
+</html>

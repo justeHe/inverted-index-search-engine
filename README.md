@@ -1,95 +1,170 @@
-A Document Search Engine project with TF-IDF.
-# Prerequisites
----
-- Python 3.5+
-- pip3
-- NLTK
-- Scikit-learn
+```md
+# 📚 Inverted Index Search Engine
 
-# 1. Data Collection
----
-Here, we are using a custom dataset with data scraped from [No Starch Press](https://nostarch.com).
-The dataset contains a collection of books published by the publication under tag [Programming](https://nostarch.com/catalog/programming).
-## 1.1 Data Cleaning: 
----
-In this step we clean the scraped data, removing any unnecessary characters.
+## 🧠 Overview
 
-```python
-special_chars = '''!()--[]{};:'"\\, <>./?@#$%^&*_~0123456789+='''''  
-  
-for file in pub_name:  
-    word_sc_rm = ""  
-    if len(file.split()) ==1 :  
-        pub_list_special_rm.append(file)  
-    else:  
-        for a in file:  
-            if a in special_chars:  
-                word_sc_rm += ' '  
-            else:  
-                word_sc_rm += a  
-        pub_list_special_rm.append(word_sc_rm)
-```
-## 1.2 Data Pre-processing
----
-In this step, the cleaned data is pre-processed before creating the inverted index of tokens.
-The pre-processing pipeline includes tokenizing each sentence, removing stop words and finally stemming. 
+This project is a simple Information Retrieval (IR) system built for course practice.  
+It demonstrates the core pipeline of a search engine, including:
 
-```python
-for name in pub_list_special_rm:  
-    words = word_tokenize(name)  
-    stem_word = ""  
-    for a in words:  
-        if a.lower() not in STOPWORDS:  
-            stem_word += stemmer.stem(a) + ' '  
-    pub_list_stemmed.append(stem_word.lower())
+- Web scraping
+- Text preprocessing
+- Inverted index construction
+- TF-IDF ranking
+- Cosine similarity retrieval
+- Web-based search interface (Flask)
+
+---
+
+## ⚙️ System Architecture
+
 ```
 
-# 2.Indexing
----
-An Inverted Index is created with each token of all sentences as keys and their indexes as values.
+Crawler → Preprocessing → Inverted Index → TF-IDF Vectorization → Ranking → Web UI
 
-```python
-data_dict = {}  
-  
-for a in range(len(pub_list_stemmed)):  
-    for b in pub_list_stemmed[a].split():  
-        if b not in data_dict:  
-            data_dict[b] = [a]  
-        else:  
-            data_dict[b].append(a)
 ```
 
-### Inverted Index 
 ---
-<img src="https://github.com/user-attachments/assets/66d85ef3-3370-4b01-9f37-5ff8241b209e" width=500px>
 
-# 3. Search Engine
----
-This Search Engine uses the TF-IDF algorithm.
-[**TF-IDF**](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) stands for **“Term Frequency — Inverse Document Frequency”**. This is a technique to calculate the weight of each word signifies the importance of the word in the document and corpus
-## 3.1 Calculating ranking using [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity).
----
-It is the most common metric used to calculate the similarity between document text.
-<img src="https://github.com/user-attachments/assets/36662b88-702d-4e22-872b-5d1560dc7d9b" width=500px>
+## 📦 Features
 
-## Generating TF-IDF using TfidfVectorizer
+### ✔ Web Scraping
+- Extracts book information (title, author, link)
+- Source: No Starch Press programming catalog
+
+### ✔ Text Processing
+- Tokenization (NLTK)
+- Stopword removal
+- Stemming (Porter Stemmer)
+- Special character filtering
+
+### ✔ Inverted Index
+- Term → document mapping
+- Supports term frequency (TF)
+
+### ✔ Ranking Model
+- TF-IDF vectorization (sklearn)
+- Cosine similarity scoring
+
+### ✔ Search Engine
+- Multi-word query support
+- Ranked retrieval results
+
+### ✔ Web Interface
+- Flask backend
+- HTML-based search UI
+- JSON API communication
+
 ---
-```python
-temp_file = tfidf.fit_transform(temp_file)  
-cosine_output = cosine_similarity(temp_file, tfidf.transform(stem_word_file))  
+
+## 📁 Project Structure
+
 ```
 
-# Testing the function
+project/
+│
+├── scraper.py                          # Web crawler
+├── indexer.py                         # Build inverted index
+├── searchData.py                      # Search & ranking logic
+│
+├── text_processing.py                 # Shared preprocessing module
+├── tfidf_model.py                     # TF-IDF model builder
+│
+├── web_app.py                         # Flask backend server
+│
+├── scraper_results.json              # Raw scraped data
+├── publication_indexed_dictionary.json
+├── publication_list_stemmed.json
+│
+├── templates/
+│   └── index.html                    # Web UI
+
+````
+
 ---
+
+## 🚀 How to Run
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+````
+
+---
+
+### 2. Download NLTK resources
+
 ```python
-search_data('python')
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 ```
-<img src="https://github.com/user-attachments/assets/060be523-6dcb-40c7-ae88-7e4d07cc0642" width=500px>
 
-**Result of similar documents for word "Python".** 
-
-# Conclusion
 ---
-The search engine at the current stage has very limited capability.
-Using a vector encoder model would provide sematic search results that are similar in meaning while TF-IDF model doesn't understand words.
 
+### 3. Run the pipeline
+
+```bash
+python scraper.py
+python indexer.py
+python web_app.py
+```
+
+---
+
+### 4. Open browser
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 🔍 Example Queries
+
+* machine learning
+* python security
+* deep learning
+* data science
+* information retrieval
+
+---
+
+## 📊 Techniques Used
+
+* Inverted Index
+* TF-IDF weighting
+* Cosine similarity
+* Text preprocessing pipeline
+* Web scraping (BeautifulSoup)
+* Flask web framework
+
+---
+
+## 🧪 Limitations
+
+* No BM25 ranking model
+* No query expansion
+* No phrase search support
+* Small dataset (single source website)
+* Basic ranking strategy
+
+---
+
+## 🚀 Future Improvements
+
+* BM25 ranking model
+* Query suggestion (autocomplete)
+* Phrase search (positional index)
+* Elasticsearch integration
+* Frontend framework upgrade (Vue/React)
+* Relevance evaluation (Precision / Recall)
+
+---
+
+## 👨‍💻 Author
+
+Course project for Information Retrieval system implementation.
+
+```
+```
