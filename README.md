@@ -1,40 +1,77 @@
-# 📚 Inverted Index Search Engine
+# SCUPI 2026 IR Project --Group 4
 
-[](https://www.python.org/downloads/)
-[](https://flask.palletsprojects.com/)
-[](https://opensource.org/licenses/MIT)
 
-A lightweight Information Retrieval (IR) system designed for educational purposes. This project demonstrates the full lifecycle of a search engine, from automated data collection to ranked document retrieval using vector space models.
+[](https://www.google.com/search?q=https://www.python.org/downloads/)
+[](https://www.google.com/search?q=https://flask.palletsprojects.com/)
+[](https://www.google.com/search?q=https://www.nltk.org/)
+[](https://www.google.com/search?q=)
 
------
+## Overview
 
-## 🏗️ System Architecture
-
-The engine follows a standard linear pipeline:
-`Web Scraper` → `Text Preprocessing` → `Inverted Indexing` → `TF-IDF Vectorization` → `Cosine Similarity Ranking` → `Flask Web UI`
+HybridSearch is an advanced Information Retrieval (IR) system that evolves beyond simple keyword matching. It implements a Multi-field Hybrid Retrieval architecture, combining lexical precision with semantic context. By utilizing a linear fusion model, the engine weighs different document fields (Title, Author, Summary) and balances statistical relevance with semantic similarity to deliver highly accurate search results.
 
 -----
 
-## 🌟 Key Features
+##  System Architecture
 
-### 🕷️ Automated Data Collection
+The system utilizes a decoupled pipeline architecture, separating the heavy indexing workload from the real-time retrieval logic.
 
-  * **Targeted Crawling:** Extracts book metadata (Titles, Authors, URLs) from the No Starch Press programming catalog.
-  * **Persistent Storage:** Saves raw data in structured JSON format for offline processing.
+```mermaid
+graph TD
+    subgraph "Data Acquisition"
+    A[Web Scraper: No Starch Press] --> B[(Raw Metadata)]
+    end
 
-### 🧠 Advanced NLP Pipeline
+    subgraph "Indexing Pipeline"
+    B --> C[NLP Preprocessing]
+    C --> D{Multi-field Indexer}
+    D --> D1[Title Index]
+    D --> D2[Author Index]
+    D --> D3[Summary Index]
+    D1 & D2 & D3 --> E[TF-IDF Vectorization]
+    end
 
-  * **Tokenization:** Breaks down raw text using NLTK’s `punkt` tokenizer.
-  * **Normalization:** \* Stopword removal (common English words).
-      * Case folding (lowercasing).
-      * Noise filtering (removing special characters/symbols).
-  * **Stemming:** Implements the **Porter Stemmer** algorithm to reduce words to their root forms.
+    subgraph "Retrieval Engine"
+    F[User Query] --> G[Query Preprocessing]
+    G --> H[Hybrid Ranking Model]
+    E --> H
+    H --> I[Linear Score Fusion]
+    I --> J[Ranked Results]
+    end
 
-### 🔎 Search & Ranking Logic
+    J --> K[Flask Web UI]
+```
 
-  * **Inverted Index:** A high-performance mapping of `Terms -> Document IDs` for rapid lookups.
-  * **TF-IDF Weighting:** Calculates Term Frequency and Inverse Document Frequency using `scikit-learn`.
-  * **Vector Space Model:** Ranks results based on **Cosine Similarity** between the user query and document vectors.
+-----
+
+##  Key Technical Features
+
+### 1\. Multi-Field Representation
+
+Unlike basic engines that flatten data, this system treats documents as multi-dimensional entities. It indexes **Title**, **Author**, and **Summary** separately, allowing for field-specific importance weighting during the retrieval phase.
+
+### 2\. Advanced NLP Pipeline
+
+  * **Tokenization & Normalization:** Standardizing raw HTML text.
+  * **Stopword Elimination:** Filtering non-informative tokens using NLTK corpora.
+  * **Porter Stemming:** Reducing morphological variants to their root form (e.g., "programming" → "program").
+
+### 3\. Hybrid Ranking & Linear Fusion (Core Innovation)
+
+The system calculates a final relevancy score using a **Weighted Linear Combination** of lexical and semantic scores.
+
+#### Mathematical Model
+
+The final score $S_{total}$ for a document $d$ given query $q$ is defined as:
+
+$$S_{total}(q, d) = \alpha \cdot \sum_{i \in \{T, A, S\}} (w_i \cdot \text{sim}_{tfidf}(q, d_i)) + (1-\alpha) \cdot S_{semantic}$$
+
+**Parameters:**
+
+  * $w_i$: Field weights (**Title: 0.7, Author: 0.2, Summary: 0.1**)
+  * $\text{sim}_{tfidf}$: Cosine similarity of TF-IDF vectors.
+  * $S_{semantic}$: Semantic approximation based on summary context.
+  * $\alpha$: The **Balance Factor** between lexical matching and semantic relevance.
 
 -----
 
@@ -48,89 +85,59 @@ project/
 ├── text_processing.py      # Shared NLP utility module
 ├── tfidf_model.py          # TF-IDF vectorization logic
 ├── web_app.py              # Flask server & API routes
-├── data/                   # Generated data files (JSON)
-│   ├── scraper_results.json
-│   ├── publication_indexed_dictionary.json
-│   └── publication_list_stemmed.json
 └── templates/              
     └── index.html          # Search engine frontend
 ```
 
 -----
 
-## 🚀 Getting Started
 
-### 1\. Prerequisites
+##  Getting Started
 
-Ensure you have Python 3.8+ installed. Install the required dependencies:
+### 1\. Environment Setup
 
 ```bash
-pip install flask nltk beautifulsoup4 scikit-learn requests
+# Clone the repository
+git clone https://github.com/justeHe/inverted-index-search-engine.git
+cd Inverted-Index-Search-Engine
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-### 2\. Download NLTK Models
-
-The system requires specific language models for tokenization and stemming:
+### 2\. Initialize NLP Resources
 
 ```python
 import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
+nltk.download(['punkt', 'stopwords'])
 ```
 
-### 3\. Execution Pipeline
-
-Run the components in the following order to build the index and launch the app:
+### 3\. Execution Flow
 
 ```bash
-# Step 1: Scrape the data
-python scraper.py
+# Execute Scraper to fetch latest book data
+python core/scraper.py
 
-# Step 2: Build the index and TF-IDF vectors
-python indexer.py
+# Build Multi-field Inverted Index & Vector Models
+python core/indexer.py
 
-# Step 3: Start the web server
-python web_app.py
+# Launch the Web Interface
+python web/web_app.py
 ```
 
-### 4\. Access the UI
+-----
 
-Open your browser and navigate to:
-`http://127.0.0.1:5000`
+##  Example Queries
+
+  * `machine learning` — *Targeting titles and summaries.*
+  * `python security` — *Finding specific tech niches.*
+  * `al sweigart` — *Author-based retrieval via weighted fields.*
 
 -----
 
-## 📊 Example Queries
+## Future Roadmap
 
-Try the following terms in the search bar:
-
-  * `machine learning`
-  * `python security`
-  * `linux internals`
-  * `cryptography`
-
------
-
-## 🛠️ Tech Stack
-
-  * **Backend:** Python, Flask
-  * **NLP:** NLTK (Natural Language Toolkit)
-  * **Scraping:** BeautifulSoup4, Requests
-  * **ML/Math:** Scikit-learn, NumPy
-
------
-
-## 🧪 Limitations & Roadmap
-
-### Current Constraints
-
-  * **Ranking:** Uses basic TF-IDF (lacks BM25 probabilistic ranking).
-  * **Scale:** Optimized for small datasets; not suitable for millions of documents.
-  * **Querying:** No support for phrase search (e.g., "exact match") or Boolean operators.
-
-### Future Enhancements
-
-  - [ ] Implement **BM25 Ranking** for better relevance.
-  - [ ] Add **Query Suggestion** (Autocomplete) functionality.
-  - [ ] Support **Positional Indexing** for phrase search.
-  - [ ] Integrate **Elasticsearch** for high-scalability production use.
+  - [ ] **Probabilistic Model:** Transition from TF-IDF to **BM25** for better term saturation handling.
+  - [ ] **Neural Search:** Integrate **Sentence-BERT (SBERT)** embeddings for true dense retrieval.
+  - [ ] **RRF:** Implement **Reciprocal Rank Fusion** for combining disparate rank lists.
+  - [ ] **Query Expansion:** Use Pseudo-Relevance Feedback to improve recall.

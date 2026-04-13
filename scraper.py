@@ -20,44 +20,49 @@ def startScraper():
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # ⭐ 更通用写法（避免 class 变化导致崩）
-    books = soup.select("article, div.view-content div")
+    books = soup.select("article.node-product")
 
     for item in books:
         try:
-            a_tag = item.find("a")
-            if not a_tag or not a_tag.text.strip():
+            a_tag = item.select_one("h2 a")
+            if not a_tag:
                 continue
 
             name = a_tag.text.strip()
             link = a_tag.get("href", "")
-
-            # 处理相对路径
             if link.startswith("/"):
                 link = "https://nostarch.com" + link
 
-            # 作者（可能不存在）
-            author_tag = item.find(string=lambda x: x and "by" in x.lower())
-            author = author_tag.strip() if author_tag else "Unknown"
+            author_tag = item.select_one(".field-name-field-author .field-item")
+            author = author_tag.text.strip() if author_tag else "Unknown"
+
+            summary_tag = item.select_one(".field-name-body .field-item p")
+            summary = summary_tag.text.strip() if summary_tag else ""
+            
+            date_tag = item.select_one(".field-name-field-released .field-item")
+            date = date_tag.text.strip() if date_tag else ""
 
             data = {
-                "link": link,
                 "name": name,
-                "author": author
+                "link": link,
+                "author": author,
+                "summary": summary,
+                "date": date
             }
 
             book_data.append(data)
 
-        except Exception:
+        except Exception as e:
+            print("Parse error:", e)
             continue
 
-    # 去重（防止抓重复）
     unique_data = {item['name']: item for item in book_data}.values()
 
     with open('scraper_results.json', 'w', encoding='utf-8') as f:
         json.dump(list(unique_data), f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Crawled {len(unique_data)} books")
+    print(f"Crawled {len(unique_data)} books")
+
 
 if __name__ == "__main__":
     startScraper()

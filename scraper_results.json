@@ -1,837 +1,1087 @@
 [
   {
-    "link": "https://nostarch.com/catalog/art-photography-design",
-    "name": "Art & Design",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/general-computing",
-    "name": "General Computing",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/security",
-    "name": "Hacking & Computer Security",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/hardware-and-diy",
-    "name": "Hardware / DIY",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/kids",
-    "name": "Kids",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/lego",
-    "name": "LEGO",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/linux-bsd-unix",
-    "name": "Linux & BSD",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/manga",
-    "name": "Manga",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/programming",
-    "name": "Programming",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/science-math",
-    "name": "Science & Math",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/system-administration",
-    "name": "System Administration",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/catalog/early-access",
-    "name": "Early Access",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/merchandise-0",
-    "name": "Merch",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/automate-excel-with-python",
     "name": "Automate Excel with Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/automate-excel-with-python",
+    "author": "John Wengler",
+    "summary": "AI can write the code. You still need to know what it does.",
+    "date": "May 2026"
   },
   {
-    "link": "https://nostarch.com/linux-command-line-3e",
     "name": "The Linux Command Line, 3rd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/linux-command-line-3e",
+    "author": "William Shotts",
+    "summary": "You've seen the shiny surface of Linux. Now dive below it.",
+    "date": "February 2026"
   },
   {
-    "link": "https://nostarch.com/purple-teaming",
     "name": "Practical Purple Teaming",
-    "author": "Unknown"
+    "link": "https://nostarch.com/purple-teaming",
+    "author": "Alfie Champion",
+    "summary": "Real-world threats demand real-world teamwork.",
+    "date": "September 2025"
   },
   {
-    "link": "https://nostarch.com/automate-workbook",
     "name": "Automate the Boring Stuff with Python -- Workbook",
-    "author": "Unknown"
+    "link": "https://nostarch.com/automate-workbook",
+    "author": "Al Sweigart",
+    "summary": "You’ve seen what Python can do. Now go deeper.",
+    "date": "September 2025"
   },
   {
-    "link": "https://nostarch.com/heavy-wizardry-101",
     "name": "Heavy Wizardry 101",
-    "author": "Unknown"
+    "link": "https://nostarch.com/heavy-wizardry-101",
+    "author": "David Martínez Oliveira, aka Pico",
+    "summary": "Most hackers borrow their spells. Pico teaches you to write your own, from shellcode to worms across four architectures.",
+    "date": "April 2026"
   },
   {
-    "link": "https://nostarch.com/art-64-bit-assembly-v2",
     "name": "The Art of 64-Bit Assembly, Volume 2",
-    "author": "Unknown"
+    "link": "https://nostarch.com/art-64-bit-assembly-v2",
+    "author": "Randall Hyde",
+    "summary": "No magic. No shortcuts. No runtime to blame.",
+    "date": "June 2026"
   },
   {
-    "link": "https://nostarch.com/computer-science-from-scratch",
     "name": "Computer Science From Scratch",
-    "author": "Unknown"
+    "link": "https://nostarch.com/computer-science-from-scratch",
+    "author": "David Kopec",
+    "summary": "You know how to write Python. Now master the computer science that makes it work.",
+    "date": "August 2025"
   },
   {
-    "link": "https://nostarch.com/rust-programming-language-3e",
     "name": "The Rust Programming Language, 3rd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/rust-programming-language-3e",
+    "author": "Steve Klabnik, Carol Nichols, and Chris Krycho, with contributions from the Rust Community",
+    "summary": "Build stable, production-grade systems with Rust.",
+    "date": "March 2026"
   },
   {
-    "link": "https://nostarch.com/practical-deep-learning-python-2E",
     "name": "Practical Deep Learning, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/practical-deep-learning-python-2E",
+    "author": "Ronald T. Kneusel",
+    "summary": "Deep learning you can actually build and deploy. No drowning in theory required.",
+    "date": "July 2025"
   },
   {
-    "link": "https://nostarch.com/quantum-computing",
     "name": "Quantum Computing",
-    "author": "Unknown"
+    "link": "https://nostarch.com/quantum-computing",
+    "author": "Andrew Glassner",
+    "summary": "A friendly introduction to quantum programming for complete beginners.",
+    "date": "July 2025"
   },
   {
-    "link": "https://nostarch.com/game-boy-coding-adventure",
     "name": "Game Boy Coding Adventure",
-    "author": "Learn assembly by doing what you always wanted as a kid: programming a Game Boy."
+    "link": "https://nostarch.com/game-boy-coding-adventure",
+    "author": "Maximilien Dagois",
+    "summary": "Learn assembly by doing what you always wanted as a kid: programming a Game Boy.",
+    "date": "October 2025"
   },
   {
-    "link": "https://nostarch.com/book-of-r-2nd-edition",
     "name": "The Book of R, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/book-of-r-2nd-edition",
+    "author": "Tilman M. Davies",
+    "summary": "R for data analysis and statistics, updated and expanded. Start here if you're serious about the language.",
+    "date": "November 2025"
   },
   {
-    "link": "https://nostarch.com/deep-learning-crash-course",
     "name": "Deep Learning Crash Course",
-    "author": "Unknown"
+    "link": "https://nostarch.com/deep-learning-crash-course",
+    "author": "Giovanni Volpe, Benjamin Midtvedt, Jesús Pineda, Henrik Klein Moberg, Harshith Bachimanchi, Joana B. Pereira, and Carlo Manzo",
+    "summary": "Deep neural networks explained clearly, from fundamentals to real-world application. No PhD required.",
+    "date": "January 2026"
   },
   {
-    "link": "https://nostarch.com/total-typescript",
     "name": "Total TypeScript",
-    "author": "Unknown"
+    "link": "https://nostarch.com/total-typescript",
+    "author": "Matt Pocock with Taylor Bell",
+    "summary": "Everything you need to know to build a TypeScript product from scratch.",
+    "date": "April 2026"
   },
   {
-    "link": "https://nostarch.com/effective-shell",
     "name": "Effective Shell",
-    "author": "Unknown"
+    "link": "https://nostarch.com/effective-shell",
+    "author": "Dave Kerr",
+    "summary": "Master the tools. Build the workflow. Own the shell.",
+    "date": "June 2025"
   },
   {
-    "link": "https://nostarch.com/effective-c-2nd-edition",
     "name": "Effective C, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/effective-c-2nd-edition",
+    "author": "Robert C. Seacord",
+    "summary": "C is unforgiving, powerful, and worth learning properly. This is where you start.",
+    "date": "September 2024"
   },
   {
-    "link": "https://nostarch.com/eloquent-javascript-4th-edition",
     "name": "Eloquent JavaScript, 4th Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/eloquent-javascript-4th-edition",
+    "author": "Marijn Haverbeke",
+    "summary": "The JavaScript book developers actually recommend to each other. Now in its fourth edition.",
+    "date": "September 2024"
   },
   {
-    "link": "https://nostarch.com/graph-algorithms-fun-way",
     "name": "Graph Algorithms the Fun Way",
-    "author": "Unknown"
+    "link": "https://nostarch.com/graph-algorithms-fun-way",
+    "author": "Jeremy Kubica",
+    "summary": "Graph algorithms explained through puzzles, mazes, and fantastical problems. More fun than it sounds.",
+    "date": "October 2024"
   },
   {
-    "link": "https://nostarch.com/nature-code",
     "name": "The Nature of Code",
-    "author": "Unknown"
+    "link": "https://nostarch.com/nature-code",
+    "author": "Daniel Shiffman",
+    "summary": "This creative coding tutorial is designed to grow your skills in a fun, hands-on way as you build simulations of natural phenomena.",
+    "date": "July 2024"
   },
   {
-    "link": "https://nostarch.com/system-programming-linux",
     "name": "System Programming in Linux",
-    "author": "Unknown"
+    "link": "https://nostarch.com/system-programming-linux",
+    "author": "Stewart N. Weiss",
+    "summary": "Learn to write real Linux software—not just run it.",
+    "date": "September 2025"
   },
   {
-    "link": "https://nostarch.com/book-batch-scripting",
     "name": "The Book of Batch Scripting",
-    "author": "Unknown"
+    "link": "https://nostarch.com/book-batch-scripting",
+    "author": "Jack McLarney",
+    "summary": "This fast-paced, hands-on, quirky introduction to Windows’ Batch scripting language is ideal for all skill levels.",
+    "date": "May 2024"
   },
   {
-    "link": "https://nostarch.com/automate-boring-stuff-python-3rd-edition",
     "name": "Automate the Boring Stuff with Python, 3rd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/automate-boring-stuff-python-3rd-edition",
+    "author": "Al Sweigart",
+    "summary": "Your computer can do that for you. Al Sweigart shows you how, updated for the latest Python.",
+    "date": "April 2025"
   },
   {
-    "link": "https://nostarch.com/art-arm-assembly-volume-1",
     "name": "The Art of ARM Assembly, Volume 1",
-    "author": "Add valuable skills to your programming toolkit by learning to write complete applications in ARM, a popular low-level assembly language."
+    "link": "https://nostarch.com/art-arm-assembly-volume-1",
+    "author": "Randall Hyde",
+    "summary": "Add valuable skills to your programming toolkit by learning to write complete applications in ARM, a popular low-level assembly language.",
+    "date": "January 2025"
   },
   {
-    "link": "https://nostarch.com/linux-basics-hackers-2nd-edition",
     "name": "Linux Basics for Hackers, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/linux-basics-hackers-2nd-edition",
+    "author": "OccupyTheWeb",
+    "summary": "Kali Linux for hackers and pentesters, fully updated. The place to start.",
+    "date": "May 2025"
   },
   {
-    "link": "https://nostarch.com/social-media-exposed",
     "name": "Social Media Exposed",
-    "author": "Unknown"
+    "link": "https://nostarch.com/social-media-exposed",
+    "author": "Alexei Sisulu Abrahams",
+    "summary": "Learn how to build a web app that can monitor millions of posts across social media to chart public opinion in real time.",
+    "date": "Fall 2026"
   },
   {
-    "link": "https://nostarch.com/kotlin-scratch",
     "name": "Kotlin from Scratch",
-    "author": "Learn to code in Kotlin by starting from scratch and gradually building skills to tackle a wide range of fun and challenging problems."
+    "link": "https://nostarch.com/kotlin-scratch",
+    "author": "Faisal Islam",
+    "summary": "Learn to code in Kotlin by starting from scratch and gradually building skills to tackle a wide range of fun and challenging problems.",
+    "date": "November 2024"
   },
   {
-    "link": "https://nostarch.com/math-programming",
     "name": "Math for Programming",
-    "author": "Unknown"
+    "link": "https://nostarch.com/math-programming",
+    "author": "Ronald T. Kneusel",
+    "summary": "A one-stop-shop for all the math you should have learned for your programming career.",
+    "date": "March 2025"
   },
   {
-    "link": "https://nostarch.com/c-type-system",
     "name": "The C# Type System",
-    "author": "Unknown"
+    "link": "https://nostarch.com/c-type-system",
+    "author": "Steve Love",
+    "summary": "A comprehensive guide to effectively using modern C# to write better programs.",
+    "date": "September 2023"
   },
   {
-    "link": "https://nostarch.com/algorithmic-thinking-2nd-edition",
     "name": "Algorithmic Thinking, 2nd Edition",
-    "author": "Get in the game and learn essential computer algorithms by solving competitive programming problems—no math required."
+    "link": "https://nostarch.com/algorithmic-thinking-2nd-edition",
+    "author": "Daniel Zingaro",
+    "summary": "Get in the game and learn essential computer algorithms by solving competitive programming problems—no math required.",
+    "date": "December 2023"
   },
   {
-    "link": "https://nostarch.com/art-randomness",
     "name": "The Art of Randomness",
-    "author": "Unknown"
+    "link": "https://nostarch.com/art-randomness",
+    "author": "Ronald T. Kneusel",
+    "summary": "Use randomness to solve problems in fun, hands-on experiments—from simulating evolution to encrypting messages.",
+    "date": "January 2024"
   },
   {
-    "link": "https://nostarch.com/complete-developer",
     "name": "The Complete Developer",
-    "author": "Unknown"
+    "link": "https://nostarch.com/complete-developer",
+    "author": "Martin Krause",
+    "summary": "A hands-on, beginner-friendly approach to developing complete web applications from the ground up.",
+    "date": "January 2024"
   },
   {
-    "link": "https://nostarch.com/math-hacks-scratch",
     "name": "Math Hacks for Scratch",
-    "author": "Unknown"
+    "link": "https://nostarch.com/math-hacks-scratch",
+    "author": "Michael Mays",
+    "summary": "Push Scratch programming to the limits as you explore mathematical curiosities through hands-on coding projects.",
+    "date": "October 2024"
   },
   {
-    "link": "https://nostarch.com/python-playground-2nd-edition",
     "name": "Python Playground, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/python-playground-2nd-edition",
+    "author": "Mahesh Venkitachalam",
+    "summary": "Put the fun back in programming with 3D simulations, speech-recognition systems, IoT devices, and more.",
+    "date": "September 2023"
   },
   {
-    "link": "https://nostarch.com/data-structures-and-algorithms-javascript",
     "name": "Data Structures and Algorithms in JavaScript",
-    "author": "Unknown"
+    "link": "https://nostarch.com/data-structures-and-algorithms-javascript",
+    "author": "Federico Kereki",
+    "summary": "This deep dive into the world of data structures and algorithms will transform how you approach problem solving in JavaScript.",
+    "date": "November 2024"
   },
   {
-    "link": "https://nostarch.com/shapeofdata",
     "name": "The Shape of Data",
-    "author": "Unknown"
+    "link": "https://nostarch.com/shapeofdata",
+    "author": "Colleen M. Farrelly and Yaé Ulrich Gaba",
+    "summary": "This advanced machine learning book teaches algorithms through geometry, and data analysis through practical scientific applications.",
+    "date": "July 2023"
   },
   {
-    "link": "https://nostarch.com/practical-julia",
     "name": "Practical Julia",
-    "author": "Unknown"
+    "link": "https://nostarch.com/practical-julia",
+    "author": "Lee Phillips",
+    "summary": "Use Julia as a research tool and solve real-world problems in this practical, hands-on intro to the language.",
+    "date": "October 2023"
   },
   {
+    "name": "Introduction to Computer Organization: ARM Edition",
     "link": "https://nostarch.com/introcomputerorgforarm",
-    "name": "Introduction to Computer Organization: ARM\tEdition",
-    "author": "Unknown"
+    "author": "Robert G. Plantz",
+    "summary": "Learn ARM 64-bit assembly from the ground up as you explore how high-level code connects to computer hardware.",
+    "date": "December 2024"
   },
   {
-    "link": "https://nostarch.com/python-kids-2nd-edition",
     "name": "Python for Kids, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/python-kids-2nd-edition",
+    "author": "Jason R. Briggs",
+    "summary": "The book that got a generation of kids coding in Python, fully updated for the latest version.",
+    "date": "October 2022"
   },
   {
-    "link": "https://nostarch.com/mysql-crash-course",
     "name": "MySQL Crash Course",
-    "author": "Unknown"
+    "link": "https://nostarch.com/mysql-crash-course",
+    "author": "Rick Silva",
+    "summary": "Takes you from the basics of creating a table to the complexities of managing an entire database, with real-world examples and hands-on projects.",
+    "date": "March 2023"
   },
   {
-    "link": "https://nostarch.com/dive-data-science",
     "name": "Dive Into Data Science",
-    "author": "Unknown"
+    "link": "https://nostarch.com/dive-data-science",
+    "author": "Bradford Tuckfield",
+    "summary": "Teaches you how to collect and work with data in business settings, and how to analyze data sets using Python code.",
+    "date": "April 2023"
   },
   {
-    "link": "https://nostarch.com/book-kubernetes",
     "name": "The Book of Kubernetes",
-    "author": "Unknown"
+    "link": "https://nostarch.com/book-kubernetes",
+    "author": "Alan Hohn",
+    "summary": "This hands-on guidebook explains the inner workings of containers, and shows how Kubernetes helps computing, networking, and storage.",
+    "date": "August 2022"
   },
   {
-    "link": "https://nostarch.com/python-crash-course-3rd-edition",
     "name": "Python Crash Course, 3rd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/python-crash-course-3rd-edition",
+    "author": "Eric Matthes",
+    "summary": "This fast-paced intro to programming with Python will have you writing code, solving problems, and making cool projects in no time.",
+    "date": "December 2022"
   },
   {
-    "link": "https://nostarch.com/strange-code",
     "name": "Strange Code",
-    "author": "Strengthen your coding skills by exploring the weird, wonderful world of atypical and esoteric languages."
+    "link": "https://nostarch.com/strange-code",
+    "author": "Ronald T. Kneusel",
+    "summary": "Strengthen your coding skills by exploring the weird, wonderful world of atypical and esoteric languages.",
+    "date": "August 2022"
   },
   {
-    "link": "https://nostarch.com/data-structures-fun-way",
     "name": "Data Structures the Fun Way",
-    "author": "Unknown"
+    "link": "https://nostarch.com/data-structures-fun-way",
+    "author": "Jeremy Kubica",
+    "summary": "Binary trees, hash tables, and heaps, explained through puzzles and analogies. More fun than it sounds.",
+    "date": "September 2022"
   },
   {
-    "link": "https://nostarch.com/php-crash-course",
     "name": "PHP Crash Course",
-    "author": "Unknown"
+    "link": "https://nostarch.com/php-crash-course",
+    "author": "Matt Smith",
+    "summary": "A complete, practical foundation for writing professional web applications.",
+    "date": "December 2024"
   },
   {
-    "link": "https://nostarch.com/python-data-science",
     "name": "Python for Data Science",
-    "author": "Introduces you to the Pythonic world of data analysis with a learn-by-doing approach rooted in hands-on activities."
+    "link": "https://nostarch.com/python-data-science",
+    "author": "Yuli Vasiliev",
+    "summary": "Introduces you to the Pythonic world of data analysis with a learn-by-doing approach rooted in hands-on activities.",
+    "date": "June 2022"
   },
   {
-    "link": "https://nostarch.com/art-clean-code",
     "name": "The Art of Clean Code",
-    "author": "Unknown"
+    "link": "https://nostarch.com/art-clean-code",
+    "author": "Christian Mayer",
+    "summary": "Uses 8 core principles, with a focus on simplicity and functionality, to teach you how to write clear, concise code.",
+    "date": "June 2022"
   },
   {
-    "link": "https://nostarch.com/book-dash",
     "name": "The Book of Dash",
-    "author": "Unknown"
+    "link": "https://nostarch.com/book-dash",
+    "author": "Adam Schroeder, Christian Mayer, and Ann Marie Ward",
+    "summary": "A practical, fast-paced introduction to building interactive data-visualization dashboard apps in Python.",
+    "date": "September 2022"
   },
   {
-    "link": "https://nostarch.com/recursive-book-recursion",
     "name": "The Recursive Book of Recursion",
-    "author": "Unknown"
+    "link": "https://nostarch.com/recursive-book-recursion",
+    "author": "Al Sweigart",
+    "summary": "Teaches all the basics of recursion through coding projects, running programs, and using algorithms.",
+    "date": "July 2022"
   },
   {
-    "link": "https://nostarch.com/modeling-and-simulation-python",
     "name": "Modeling and Simulation in Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/modeling-and-simulation-python",
+    "author": "Allen B. Downey",
+    "summary": "Learn how to produce simulations of real-world systems with this easy-to-follow intro to physical modeling.",
+    "date": "March 2023"
   },
   {
-    "link": "https://nostarch.com/art-machine-learning",
     "name": "The Art of Machine Learning",
-    "author": "Unknown"
+    "link": "https://nostarch.com/art-machine-learning",
+    "author": "Norman Matloff",
+    "summary": "Learn to expertly apply a range of machine learning methods to real data with this practical guide.",
+    "date": "November 2023"
   },
   {
-    "link": "https://nostarch.com/javascript-crash-course",
     "name": "JavaScript Crash Course",
-    "author": "Unknown"
+    "link": "https://nostarch.com/javascript-crash-course",
+    "author": "Nick Morgan",
+    "summary": "A thorough introduction that will have you writing your own JS software and web applications in no time.",
+    "date": "January 2024"
   },
   {
-    "link": "https://nostarch.com/learn-physics-functional-programming",
     "name": "Learn Physics with Functional Programming",
-    "author": "Deepen your understanding of physics by learning to use the Haskell functional programming language."
+    "link": "https://nostarch.com/learn-physics-functional-programming",
+    "author": "Scott N. Walck",
+    "summary": "Deepen your understanding of physics by learning to use the Haskell functional programming language.",
+    "date": "December 2022"
   },
   {
-    "link": "https://nostarch.com/writing-c-compiler",
     "name": "Writing a C Compiler",
-    "author": "Unknown"
+    "link": "https://nostarch.com/writing-c-compiler",
+    "author": "Nora Sandler",
+    "summary": "A fun, hands-on guide to writing your own compiler for a real-world programming language.",
+    "date": "July 2024"
   },
   {
-    "link": "https://nostarch.com/object-oriented-python",
     "name": "Object-Oriented Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/object-oriented-python",
+    "author": "Irv Kalb",
+    "summary": "A hands-on tutorial that goes deep into OOP, showing you how to combine data and code into reusable units.",
+    "date": "December 2021"
   },
   {
-    "link": "https://nostarch.com/rust-rustaceans",
     "name": "Rust for Rustaceans",
-    "author": "Unknown"
+    "link": "https://nostarch.com/rust-rustaceans",
+    "author": "Jon Gjengset",
+    "summary": "Bridges the gap between beginners and professionals, enabling you to write apps, build libraries, and organize projects in Rust.",
+    "date": "November 2021"
   },
   {
-    "link": "https://nostarch.com/missing-readme",
     "name": "The Missing README",
-    "author": "Unknown"
+    "link": "https://nostarch.com/missing-readme",
+    "author": "Chris Riccomini and Dmitriy Ryaboy",
+    "summary": "The Missing README  gives new engineers a masterclass in coding practices, technical skills, and tips for workplace success.",
+    "date": "August 2021"
   },
   {
-    "link": "https://nostarch.com/make-python-talk",
     "name": "Make Python Talk",
-    "author": "Unknown"
+    "link": "https://nostarch.com/make-python-talk",
+    "author": "Mark Liu",
+    "summary": "Make Python Talk teaches you how to build voice-controlled apps with speech-recognition and text-to-speech features.",
+    "date": "August 2021"
   },
   {
-    "link": "https://nostarch.com/artists-guide-programming",
     "name": "An Artist's Guide to Programming",
-    "author": "Unknown"
+    "link": "https://nostarch.com/artists-guide-programming",
+    "author": "Jim Parker",
+    "summary": "Teaches beginners how to write apps that integrate graphics and sound (includes 100 example programs).",
+    "date": "May 2022"
   },
   {
-    "link": "https://nostarch.com/bare-metal-c",
     "name": "Bare Metal C",
-    "author": "Unknown"
+    "link": "https://nostarch.com/bare-metal-c",
+    "author": "Stephen Oualline",
+    "summary": "Teaches you how to program embedded devices with the C programming language.",
+    "date": "June 2022"
   },
   {
-    "link": "https://nostarch.com/dive-systems",
     "name": "Dive Into Systems",
-    "author": "A vivid, layer-by-layer intro to computer architecture and software components."
+    "link": "https://nostarch.com/dive-systems",
+    "author": "Suzanne J. Matthews, Tia Newhall, and Kevin C. Webb",
+    "summary": "A vivid, layer-by-layer intro to computer architecture and software components.",
+    "date": "August 2022"
   },
   {
-    "link": "https://nostarch.com/art-webassembly",
     "name": "The Art of WebAssembly",
-    "author": "Unknown"
+    "link": "https://nostarch.com/art-webassembly",
+    "author": "Rick Battagline",
+    "summary": "WebAssembly opens the browser to every language. Here's how to use it.",
+    "date": "May 2021"
   },
   {
-    "link": "https://nostarch.com/howlinuxworks3",
     "name": "How Linux Works, 3rd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/howlinuxworks3",
+    "author": "Brian Ward",
+    "summary": "The “hows” and “whys” of How Linux Works: for anyone who wants to understand the inner workings of the best operating system.",
+    "date": "April 2021"
   },
   {
-    "link": "https://nostarch.com/hello-web-design",
     "name": "Hello Web Design",
-    "author": "Unknown"
+    "link": "https://nostarch.com/hello-web-design",
+    "author": "Tracy Osborn",
+    "summary": "Don't wish for your own website, make it yourself with Hello Web Design! Written for beginners, brimming with professional insights, and sure to inspire.",
+    "date": "June 2021"
   },
   {
-    "link": "https://nostarch.com/black-hat-python2E",
     "name": "Black Hat Python, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/black-hat-python2E",
+    "author": "Justin Seitz and Tim Arnold",
+    "summary": "The Python tools hackers actually use, fully updated. Fully on the darker side.",
+    "date": "April 2021"
   },
   {
-    "link": "https://nostarch.com/big-book-small-python-projects",
     "name": "The Big Book of Small Python Projects",
-    "author": "Unknown"
+    "link": "https://nostarch.com/big-book-small-python-projects",
+    "author": "Al Sweigart",
+    "summary": "Al Sweigart's Big Book of Small Python Projects shows you how to easily build over 80 fun programs with minimal code and maximum creativity.",
+    "date": "June 2021"
   },
   {
-    "link": "https://nostarch.com/learn-code-solving-problems",
     "name": "Learn to Code by Solving Problems",
-    "author": "Learn to Code by Solving Problems"
+    "link": "https://nostarch.com/learn-code-solving-problems",
+    "author": "Daniel Zingaro",
+    "summary": "Learn to Code by Solving Problems is a beginner's book that uses coding-competition challenges to teach you how to write programs in Python.",
+    "date": "June 2021"
   },
   {
-    "link": "https://nostarch.com/art-64-bit-assembly-volume-1",
     "name": "The Art of 64-Bit Assembly, Volume 1",
-    "author": "Unknown"
+    "link": "https://nostarch.com/art-64-bit-assembly-volume-1",
+    "author": "Randall Hyde",
+    "summary": "Builds off its timeless predecessor, with a modern focus on writing programs using the x86 MASM.",
+    "date": "October 2021"
   },
   {
-    "link": "https://nostarch.com/practical-sql-2nd-edition",
     "name": "Practical SQL, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/practical-sql-2nd-edition",
+    "author": "Anthony DeBarros",
+    "summary": "A fast-paced guide to SQL – the language for defining, organizing, and exploring relational data.",
+    "date": "January 2022"
   },
   {
-    "link": "https://nostarch.com/racket-programming-fun-way",
     "name": "Racket Programming the Fun Way",
-    "author": "Unknown"
+    "link": "https://nostarch.com/racket-programming-fun-way",
+    "author": "James W. Stelly",
+    "summary": "If you want to learn coding, try Racket Programming the Fun Way! Build skills while you solve math puzzles, create art, and play games.",
+    "date": "January 2021"
   },
   {
-    "link": "https://nostarch.com/networkprogrammingwithgo",
     "name": "Network Programming with Go",
-    "author": "Unknown"
+    "link": "https://nostarch.com/networkprogrammingwithgo",
+    "author": "Adam Woodbeck",
+    "summary": "Network Programming with Go teaches you how to write clean, secure network software with the programming language designed to make it seem easy.",
+    "date": "March 2021"
   },
   {
-    "link": "https://nostarch.com/Learn-Python-Visually",
     "name": "Learn Python Visually",
-    "author": "Unknown"
+    "link": "https://nostarch.com/Learn-Python-Visually",
+    "author": "Tristan Bunn",
+    "summary": "Learn Python Visually takes a visual approach to teaching total beginners key programming concepts and coding techniques used in creative technology",
+    "date": "April 2021"
   },
   {
-    "link": "https://nostarch.com/how-computers-really-work",
     "name": "How Computers Really Work",
-    "author": "Unknown"
+    "link": "https://nostarch.com/how-computers-really-work",
+    "author": "Matthew Justice",
+    "summary": "Boost your computing prowess with How Computers Really Work, which deftly deconstructs hardware, software, and everything in between.",
+    "date": "December 2020"
   },
   {
-    "link": "https://nostarch.com/Dive-Into-Algorithms",
     "name": "Dive Into Algorithms",
-    "author": "Unknown"
+    "link": "https://nostarch.com/Dive-Into-Algorithms",
+    "author": "Bradford Tuckfield",
+    "summary": "Dive Into Algorithms is a wide-ranging introduction to algorithms using the Python Programming Language.",
+    "date": "January 2021"
   },
   {
-    "link": "https://nostarch.com/computer-graphics-scratch",
     "name": "Computer Graphics from Scratch",
-    "author": "Unknown"
+    "link": "https://nostarch.com/computer-graphics-scratch",
+    "author": "Gabriel Gambetta",
+    "summary": "Computer Graphics from Scratch demystifies the algorithms used in modern graphics software and guides beginners through building photorealistic 3D renders.",
+    "date": "April 2021"
   },
   {
-    "link": "https://nostarch.com/real-world-python",
     "name": "Real-World Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/real-world-python",
+    "author": "Lee Vaughan",
+    "summary": "Real World Python's fun, practice-based approach to writing programs launches you on exciting missions as you grow your skills.",
+    "date": "November 2020"
   },
   {
-    "link": "https://nostarch.com/machine-learning-kids",
     "name": "Machine Learning for Kids",
-    "author": "Unknown"
+    "link": "https://nostarch.com/machine-learning-kids",
+    "author": "Dale Lane",
+    "summary": "Machine learning concepts explained through hands-on projects kids can actually build.",
+    "date": "February 2021"
   },
   {
-    "link": "https://nostarch.com/deep-learning-visual-approach",
     "name": "Deep Learning: A Visual Approach",
-    "author": "Unknown"
+    "link": "https://nostarch.com/deep-learning-visual-approach",
+    "author": "Andrew Glassner",
+    "summary": "Deep Learning: A Visual Approach is your ticket to the future of artificial intelligence.",
+    "date": "June 2021"
   },
   {
-    "link": "https://nostarch.com/hardcore-programming-mechanical-engineers",
     "name": "Hardcore Programming for Mechanical Engineers",
-    "author": "Unknown"
+    "link": "https://nostarch.com/hardcore-programming-mechanical-engineers",
+    "author": "Angel Sola Orbaiceta",
+    "summary": "Hardcore Programming for Mechanical Engineers is for intermediate programmers who want to write good applications that solve tough engineering problems – from scratch.",
+    "date": "June 2021"
   },
   {
-    "link": "https://nostarch.com/dead-simple-python",
     "name": "Dead Simple Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/dead-simple-python",
+    "author": "Jason C. McDonald",
+    "summary": "A thorough intro to every feature of the language, for programmers who are impatient to write production code.",
+    "date": "October 2022"
   },
   {
-    "link": "https://nostarch.com/writegreatcode1_2e",
     "name": "Write Great Code, Volume 1, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/writegreatcode1_2e",
+    "author": "Randall Hyde",
+    "summary": "Write Great Code, Volume 1, 2nd Edition fills the knowledge gaps prevalent among working programmers who lack formal training.",
+    "date": "August 2020"
   },
   {
-    "link": "https://nostarch.com/writegreatcode2_2",
     "name": "Write Great Code, Volume 2, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/writegreatcode2_2",
+    "author": "Randall Hyde",
+    "summary": "Write Great Code, Volume 2, 2nd Edition covers high-level programming languages (such as Swift and Java) as well as code generation on 64-bit CPUsARM, the Java Virtual Machine, and the Microsoft Common Runtime",
+    "date": "August 2020"
   },
   {
-    "link": "https://nostarch.com/coding-classroom",
     "name": "Coding in the Classroom",
-    "author": "Unknown"
+    "link": "https://nostarch.com/coding-classroom",
+    "author": "Ryan Somma",
+    "summary": "For teachers and parents, Coding in the Classroom explains the benefits of computer science education and provides strategies to get kids coding!",
+    "date": "September 2020"
   },
   {
-    "link": "https://nostarch.com/CodingWorkbook",
     "name": "The Coding Workbook",
-    "author": "Unknown"
+    "link": "https://nostarch.com/CodingWorkbook",
+    "author": "Sam Taylor",
+    "summary": "Build a website with your pencil! The Coding Workbook empowers you to teach students the basics of web development without a computer.",
+    "date": "December 2020"
   },
   {
-    "link": "https://nostarch.com/scratch3playground",
     "name": "Scratch 3 Programming Playground",
-    "author": "Unknown"
+    "link": "https://nostarch.com/scratch3playground",
+    "author": "Al Sweigart",
+    "summary": "Learn to code video games at any age or skill level with Scratch 3 Programming Playground! Freshly updated for Scratch 3.0.",
+    "date": "January 2021"
   },
   {
-    "link": "https://nostarch.com/pythononeliners",
     "name": "Python One-Liners",
-    "author": "Unknown"
+    "link": "https://nostarch.com/pythononeliners",
+    "author": "Christian Mayer",
+    "summary": "Write concise, eloquent Python like a professional with Python One-Liners.",
+    "date": "April 2020"
   },
   {
-    "link": "https://nostarch.com/NLPPython",
     "name": "Natural Language Processing with Python and spaCy",
-    "author": "Unknown"
+    "link": "https://nostarch.com/NLPPython",
+    "author": "Yuli Vasiliev",
+    "summary": "Natural Language Processing with Python and spaCy is an introduction to the task of converting human language into data that a computer can process.",
+    "date": "April 2020"
   },
   {
-    "link": "https://nostarch.com/miningsocialmedia",
     "name": "Mining Social Media",
-    "author": "Unknown"
+    "link": "https://nostarch.com/miningsocialmedia",
+    "author": "Lam Thuy Vo",
+    "summary": "Mining Social Media explains how to obtain, process, and analyze data from the social web in meaningful ways with the Python programming language.",
+    "date": "November 2019"
   },
   {
-    "link": "https://nostarch.com/foundationsofcomp",
+    "name": "Introduction to Computer Organization",
+    "link": "https://nostarch.com/introcomporg",
+    "author": "Robert G. Plantz",
+    "summary": "A tutorial-style book that provides an introductory \"look under the hood\" of a modern computer.",
+    "date": "January 2022"
+  },
+  {
     "name": "The Secret Life of Programs",
-    "author": "Unknown"
+    "link": "https://nostarch.com/foundationsofcomp",
+    "author": "Jonathan E. Steinhart",
+    "summary": "The Secret Life of Programs is a primer on the underlying technologies that allow computer programs to work.",
+    "date": "August 2019"
   },
   {
-    "link": "https://nostarch.com/superscratch3",
     "name": "Super Scratch Programming Adventure! (Scratch 3)",
-    "author": "Unknown"
+    "link": "https://nostarch.com/superscratch3",
+    "author": "The LEAD Project",
+    "summary": "In Super Scratch Programming Adventure! (Scratch 3), kids learn programming fundamentals as they make their very own playable video games. Now updated to cover Scratch 3!",
+    "date": "August 2019"
   },
   {
-    "link": "https://nostarch.com/beyond-basic-stuff-python",
     "name": "Beyond the Basic Stuff with Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/beyond-basic-stuff-python",
+    "author": "Al Sweigart",
+    "summary": "Go from beginner programmer to Python programmer with Beyond the Basic Stuff with Python!",
+    "date": "December 2020"
   },
   {
-    "link": "https://nostarch.com/programwithappinventor",
     "name": "Learn to Program with App Inventor",
-    "author": "Unknown"
+    "link": "https://nostarch.com/programwithappinventor",
+    "author": "Lyra Blizzard Logan",
+    "summary": "Build real Android apps without writing a line of code. Then graduate to writing code.",
+    "date": "November 2019"
   },
   {
-    "link": "https://nostarch.com/programmingopenscad",
     "name": "Programming with OpenSCAD",
-    "author": "Unknown"
+    "link": "https://nostarch.com/programmingopenscad",
+    "author": "Justin Gohde and Marius Kintel",
+    "summary": "Programming with OpenSCAD teaches beginners both how to code and how to use freely available OpenSCAD software to design and print 3D models.",
+    "date": "August 2021"
   },
   {
-    "link": "https://nostarch.com/autotools2e",
     "name": "Autotools, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/autotools2e",
+    "author": "John Calcote",
+    "summary": "Autotools, 2nd Edition is the long awaited update to the practitioner's guide to GNU Autoconf, Automake, and Libtool.",
+    "date": "November 2019"
   },
   {
-    "link": "https://nostarch.com/greatcode3",
     "name": "Write Great Code, Volume 3",
-    "author": "Unknown"
+    "link": "https://nostarch.com/greatcode3",
+    "author": "Randall Hyde",
+    "summary": "Write Great Code, Volume 3 shows you how to create readable and maintainable code that will impress your fellow programmers.",
+    "date": "August 2020"
   },
   {
-    "link": "https://nostarch.com/linuxtoolbox",
     "name": "Your Linux Toolbox",
-    "author": "Unknown"
+    "link": "https://nostarch.com/linuxtoolbox",
+    "author": "Julia Evans",
+    "summary": "Your Linux Toolbox is a collection of all the awesome Linux zines you love, now as a fancy box set!",
+    "date": "August 2019"
   },
   {
-    "link": "https://nostarch.com/scratchcards3",
     "name": "The Official Scratch Coding Cards (Scratch 3.0)",
-    "author": "Unknown"
+    "link": "https://nostarch.com/scratchcards3",
+    "author": "Natalie Rusk and the Scratch Team",
+    "summary": "The Official Scratch Coding Cards (Scratch 3.0) is a deck of 76 activity cards that teaches kids to code with Scratch, a popular visual programming language.",
+    "date": "May 2019"
   },
   {
-    "link": "https://nostarch.com/powershellsysadmins",
     "name": "PowerShell for Sysadmins",
-    "author": "Unknown"
+    "link": "https://nostarch.com/powershellsysadmins",
+    "author": "Adam Bertram",
+    "summary": "Automate everything Windows with PowerShell. Formerly known as the boring way to do it.",
+    "date": "February 2020"
   },
   {
-    "link": "https://nostarch.com/twinegames",
     "name": "Make Your Own Twine Games!",
-    "author": "Unknown"
+    "link": "https://nostarch.com/twinegames",
+    "author": "Anna Anthropy",
+    "summary": "Make Your Own Twine Games! is a playful, kid-friendly introduction to game development using Twine, a free online scripting tool for creative storytelling.",
+    "date": "March 2019"
   },
   {
-    "link": "https://nostarch.com/scratchgames",
     "name": "Make Your Own Scratch Games!",
-    "author": "Unknown"
+    "link": "https://nostarch.com/scratchgames",
+    "author": "Anna Anthropy",
+    "summary": "Make Your Own Scratch Games! is a playful, kid-friendly introduction game development using the Scratch programming language.",
+    "date": "July 2019"
   },
   {
-    "link": "https://nostarch.com/puzzlescriptgames",
     "name": "Make Your Own PuzzleScript Games!",
-    "author": "Unknown"
+    "link": "https://nostarch.com/puzzlescriptgames",
+    "author": "Anna Anthropy",
+    "summary": "Make Your Own PuzzleScript Games! is a playful, kid-friendly introduction to game development using PuzzleScript, a free online tool for creating puzzle games and platform games.",
+    "date": "November 2019"
   },
   {
-    "link": "https://nostarch.com/scratchjrcards",
     "name": "ScratchJr Coding Cards",
-    "author": "Unknown"
+    "link": "https://nostarch.com/scratchjrcards",
+    "author": "Marina Umaschi Bers and Amanda Sullivan",
+    "summary": "ScratchJr Coding Cards are a deck of 75 activity cards covering fun and exciting projects designed to educate young children with the visual programming language, ScratchJr.",
+    "date": "July 2018"
   },
   {
-    "link": "https://nostarch.com/impracticalpythonprojects",
     "name": "Impractical Python Projects",
-    "author": "Unknown"
+    "link": "https://nostarch.com/impracticalpythonprojects",
+    "author": "Lee Vaughan",
+    "summary": "Impractical Python Projects is a collection of fun and educational projects designed to entertain programmers while enhancing their Python skills.",
+    "date": "November 2018"
   },
   {
-    "link": "https://nostarch.com/pythonflashcards",
     "name": "Python Flash Cards",
-    "author": "Unknown"
+    "link": "https://nostarch.com/pythonflashcards",
+    "author": "Eric Matthes",
+    "summary": "Python Flash Cards help new Python coders drill and reinforce the concepts, syntax, and terminology they'll need to become successful professional programmers.",
+    "date": "January 2019"
   },
   {
-    "link": "https://nostarch.com/cppcrashcourse",
     "name": "C++ Crash Course",
-    "author": "Unknown"
+    "link": "https://nostarch.com/cppcrashcourse",
+    "author": "Josh Lospinoso",
+    "summary": "C++ Crash Course is a fast-paced, thorough introduction to modern C++ written for experienced programmers.",
+    "date": "September 2019"
   },
   {
-    "link": "https://nostarch.com/codingwithminecraft",
     "name": "Coding with Minecraft",
-    "author": "Unknown"
+    "link": "https://nostarch.com/codingwithminecraft",
+    "author": "Al Sweigart",
+    "summary": "Coding with Minecraft is a hands-on introduction to coding that teaches how to program bots to do cool things in Minecraft.",
+    "date": "May 2018"
   },
   {
-    "link": "https://nostarch.com/seriouspython",
     "name": "Serious Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/seriouspython",
+    "author": "Julien Danjou",
+    "summary": "Serious Python is a collection of practical, real-world advice for tackling common Python developer-level problems.",
+    "date": "December 2018"
   },
   {
-    "link": "https://nostarch.com/blackhatgo",
     "name": "Black Hat Go",
-    "author": "Unknown"
+    "link": "https://nostarch.com/blackhatgo",
+    "author": "Tom Steele, Chris Patten, and Dan Kottmann",
+    "summary": "Black Hat Go will help you test your systems, build and automate tools to fit your needs, and improve your offensive security skillset.",
+    "date": "February 2020"
   },
   {
-    "link": "https://nostarch.com/missionpython",
     "name": "Mission Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/missionpython",
+    "author": "Sean McManus",
+    "summary": "Mission Python will teach you how to program an adventure game in this hands-on, beginner-friendly introduction to coding in Python.",
+    "date": "October 2018"
   },
   {
-    "link": "https://nostarch.com/mathadventures",
     "name": "Math Adventures with Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/mathadventures",
+    "author": "Peter Farrell",
+    "summary": "Math Adventures with Python teaches you how to use Python to transform learning math topics like algebra, geometry, and calculus!",
+    "date": "January 2019"
   },
   {
-    "link": "https://nostarch.com/crackingcodes",
     "name": "Cracking Codes with Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/crackingcodes",
+    "author": "Al Sweigart",
+    "summary": "Cracking Codes with Python teaches you how to program in Python while making and breaking ciphers.",
+    "date": "January 2018"
   },
   {
-    "link": "https://nostarch.com/learnjava",
     "name": "Learn Java the Easy Way",
-    "author": "Unknown"
+    "link": "https://nostarch.com/learnjava",
+    "author": "Bryson Payne",
+    "summary": "Learn Java the Easy Way is a beginner-friendly, project-based introduction to Java.",
+    "date": "October 2017"
   },
   {
-    "link": "https://nostarch.com/inventwithpython",
     "name": "Invent Your Own Computer Games with Python, 4th Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/inventwithpython",
+    "author": "Al Sweigart",
+    "summary": "Invent Your Own Computer Games with Python teaches you how to make your own versions of classic computer games.",
+    "date": "December 2016"
   },
   {
-    "link": "https://nostarch.com/ecmascript6",
     "name": "Understanding ECMAScript 6",
-    "author": "Unknown"
+    "link": "https://nostarch.com/ecmascript6",
+    "author": "Nicholas C. Zakas",
+    "summary": "Understanding ECMAScript 6 covers the new object types, syntax, and other exciting features in the latest version of JavaScript.",
+    "date": "August 2016"
   },
   {
-    "link": "https://nostarch.com/iphoneappsforkids",
     "name": "Coding iPhone Apps for Kids",
-    "author": "Unknown"
+    "link": "https://nostarch.com/iphoneappsforkids",
+    "author": "Gloria Winquist and Matt McCarthy",
+    "summary": "Coding iPhone Apps for Kids teaches you how to program the iOS apps and games you’ve always wanted to make!",
+    "date": "June 2017"
   },
   {
-    "link": "https://nostarch.com/csdetective",
     "name": "The CS Detective",
-    "author": "Unknown"
+    "link": "https://nostarch.com/csdetective",
+    "author": "Jeremy Kubica",
+    "summary": "The CS Detective is a fantasy whodunit for the digital age that introduces the concepts behind search algorithms and important data structures.",
+    "date": "August 2016"
   },
   {
-    "link": "https://nostarch.com/smallbasic",
     "name": "Learn to Program with Small Basic",
-    "author": "is a playful introduction to the kid-friendly programming language created by Microsoft."
+    "link": "https://nostarch.com/smallbasic",
+    "author": "Majed Marji and Ed Price",
+    "summary": "Learn to Program with Small Basic is a playful introduction to the kid-friendly programming language created by Microsoft.",
+    "date": "April 2016"
   },
   {
-    "link": "https://nostarch.com/programwithminecraft",
     "name": "Learn to Program with Minecraft",
-    "author": "Unknown"
+    "link": "https://nostarch.com/programwithminecraft",
+    "author": "Craig Richardson",
+    "summary": "Learn to Program with Minecraft will teach you the basics of Python programming while having fun with Minecraft!",
+    "date": "December 2015"
   },
   {
-    "link": "https://nostarch.com/gamehacking",
     "name": "Game Hacking",
-    "author": "Unknown"
+    "link": "https://nostarch.com/gamehacking",
+    "author": "Nick Cano",
+    "summary": "Game Hacking shows programmers how to dissect computer games and create bots.",
+    "date": "July 2016"
   },
   {
-    "link": "https://nostarch.com/sparkfunprocessing",
     "name": "SparkFun Guide to Processing",
-    "author": "Unknown"
+    "link": "https://nostarch.com/sparkfunprocessing",
+    "author": "Derek Runberg",
+    "summary": "The SparkFun Guide to Processing is a hands-on introduction to Processing for non-coders.",
+    "date": "August 2015"
   },
   {
-    "link": "https://nostarch.com/gnumake",
     "name": "GNU Make Book",
-    "author": "Unknown"
+    "link": "https://nostarch.com/gnumake",
+    "author": "John Graham-Cumming",
+    "summary": "The GNU Make Book is a practical, thorough guide to GNU Make basics, solutions, and advanced uses.",
+    "date": "April 2015"
   },
   {
-    "link": "https://nostarch.com/teachkids",
     "name": "Teach Your Kids to Code",
-    "author": "Unknown"
+    "link": "https://nostarch.com/teachkids",
+    "author": "Bryson Payne",
+    "summary": "Teach Your Kids to Code is a parent and teacher's guide to teaching basic programming and problem-solving skills.",
+    "date": "April 2015"
   },
   {
-    "link": "https://nostarch.com/doingmathwithpython",
     "name": "Doing Math with Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/doingmathwithpython",
+    "author": "Amit Saha",
+    "summary": "Doing Math with Python teaches you how to use Python as a tool to explore mathematics.",
+    "date": "August 2015"
   },
   {
-    "link": "https://nostarch.com/clojure",
     "name": "Clojure for the Brave and True",
-    "author": "Unknown"
+    "link": "https://nostarch.com/clojure",
+    "author": "Daniel Higginbotham",
+    "summary": "Clojure for the Brave and True is an epic introduction to functional programming with Clojure.",
+    "date": "October 2015"
   },
   {
-    "link": "https://nostarch.com/datavisualization",
     "name": "Data Visualization with JavaScript",
-    "author": "Unknown"
+    "link": "https://nostarch.com/datavisualization",
+    "author": "Stephen A. Thomas",
+    "summary": "Data Visualization with JavaScript shows developers how to create impressive data visualizations for the web, including animated charts",
+    "date": "March 2015"
   },
   {
-    "link": "https://nostarch.com/html5game",
     "name": "Build an HTML5 Game",
-    "author": "Unknown"
+    "link": "https://nostarch.com/html5game",
+    "author": "Karl Bunyan",
+    "summary": "Build an HTML5 Game teaches web developers to create a game with HTML5, CSS, and JavaScript.",
+    "date": "March 2015"
   },
   {
-    "link": "https://nostarch.com/wcss2",
     "name": "Wicked Cool Shell Scripts, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/wcss2",
+    "author": "Dave Taylor and Brandon Perry",
+    "summary": "Wicked Cool Shell Scripts, 2nd Edition is a collection of fun tools for sysadmins, web developers, and every Linux user.",
+    "date": "October 2016"
   },
   {
-    "link": "https://nostarch.com/railscrashcourse",
     "name": "Rails Crash Course",
-    "author": "Unknown"
+    "link": "https://nostarch.com/railscrashcourse",
+    "author": "Anthony Lewis",
+    "summary": "Rails Crash Course shows you how to harness Rails to build web applications that are fast, stable, and secure.",
+    "date": "October 2014"
   },
   {
-    "link": "https://nostarch.com/hemingway",
     "name": "If Hemingway Wrote JavaScript",
-    "author": "playfully imagines JavaScript programs as written by famous authors."
+    "link": "https://nostarch.com/hemingway",
+    "author": "Angus Croll",
+    "summary": "If Hemingway Wrote JavaScript playfully imagines JavaScript programs as written by famous authors.",
+    "date": "October 2014"
   },
   {
-    "link": "https://nostarch.com/css3_2e",
     "name": "Book of CSS3, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/css3_2e",
+    "author": "Peter Gasston",
+    "summary": "The Book of CSS3, 2nd Edition distills the murky language of the CSS3 specification into plain English.",
+    "date": "November 2014"
   },
   {
-    "link": "https://nostarch.com/rubywizardry",
     "name": "Ruby Wizardry",
-    "author": "Ruby Wizardry"
+    "link": "https://nostarch.com/rubywizardry",
+    "author": "Eric Weinstein",
+    "summary": "Ruby Wizardry is a modern-day fairy tale that teaches programming skills kids can use.",
+    "date": "December 2014"
   },
   {
-    "link": "https://nostarch.com/javascriptforkids",
     "name": "JavaScript for Kids",
-    "author": "Unknown"
+    "link": "https://nostarch.com/javascriptforkids",
+    "author": "Nick Morgan",
+    "summary": "JavaScript for Kids is a lighthearted introduction to the JavaScript language and programming in general.",
+    "date": "December 2014"
   },
   {
-    "link": "https://nostarch.com/fsharp",
     "name": "Book of F#",
-    "author": "Unknown"
+    "link": "https://nostarch.com/fsharp",
+    "author": "Dave Fancher",
+    "summary": "The Book of F#  teaches you to unlock the many strengths of F# to create smarter, leaner code.",
+    "date": "March 2014"
   },
   {
-    "link": "https://nostarch.com/oojs",
     "name": "Principles of Object-Oriented JavaScript",
-    "author": "Unknown"
+    "link": "https://nostarch.com/oojs",
+    "author": "Nicholas C. Zakas",
+    "summary": "Do more with less. The Principles of Object-Oriented JavaScript helps you use this powerful language to its full potential.",
+    "date": "February 2014"
   },
   {
-    "link": "https://nostarch.com/ev3lab",
     "name": "The LEGO MINDSTORMS EV3 Laboratory",
-    "author": "Unknown"
+    "link": "https://nostarch.com/ev3lab",
+    "author": "Daniele Benedettelli",
+    "summary": "The LEGO MINDSTORMS EV3 Laboratory covers the essentials of making robots with LEGO's latest and greatest MINDSTORMS kit.",
+    "date": "October 2013"
   },
   {
-    "link": "https://nostarch.com/rum",
     "name": "Ruby Under a Microscope",
-    "author": "Ruby Under a Microscope"
+    "link": "https://nostarch.com/rum",
+    "author": "Pat Shaughnessy",
+    "summary": "Ruby Under a Microscope gives developers an inside, hands-on look at Ruby's core, using simple diagrams coupled with clear explanations.",
+    "date": "November 2013"
   },
   {
-    "link": "https://nostarch.com/perloneliners",
     "name": "Perl One-Liners",
-    "author": "Unknown"
+    "link": "https://nostarch.com/perloneliners",
+    "author": "Peteris Krumins",
+    "summary": "Perl One-Liners showcases 130 short and compelling lines of code that do all sorts of handy, geeky things.",
+    "date": "November 2013"
   },
   {
-    "link": "https://nostarch.com/realmofracket.htm",
     "name": "Realm of Racket",
-    "author": ", you'll learn to wield Racket's mighty yet mind-bending power by reading comics and programming games."
+    "link": "https://nostarch.com/realmofracket.htm",
+    "author": "Matthias Felleisen, David Van Horn, Conrad Barski, M.D., and Eight Students of Northeastern University",
+    "summary": "In Realm Of Racket, you'll learn to wield Racket's mighty yet mind-bending power by reading comics and programming games.",
+    "date": "June 2013"
   },
   {
-    "link": "https://nostarch.com/modernweb",
     "name": "Modern Web",
-    "author": "Unknown"
+    "link": "https://nostarch.com/modernweb",
+    "author": "Peter Gasston",
+    "summary": "The Modern Web deftly guides you through the technologies web developers will need now and in the years to come.",
+    "date": "April 2013"
   },
   {
-    "link": "https://nostarch.com/erlang",
     "name": "Learn You Some Erlang for Great Good!",
-    "author": "Unknown"
+    "link": "https://nostarch.com/erlang",
+    "author": "Fred Hebert",
+    "summary": "Learn You Some Erlang for Great Good! is the perfect entry point into the sometimes-crazy, always-thrilling world of Erlang.",
+    "date": "January 2013"
   },
   {
-    "link": "https://nostarch.com/thinklikeaprogrammer",
     "name": "Think Like a Programmer",
-    "author": "Unknown"
+    "link": "https://nostarch.com/thinklikeaprogrammer",
+    "author": "V. Anton Spraul",
+    "summary": "In this one-of-a-kind text, author V. Anton Spraul breaks down the ways that programmers solve problems and teaches readers what other introductory books often ignore: how to Think Like a Programmer.",
+    "date": "August 2012"
   },
   {
-    "link": "https://nostarch.com/webbots2",
     "name": "Webbots, Spiders, and Screen Scrapers, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/webbots2",
+    "author": "Michael Schrenk",
+    "summary": "Webbots, Spiders, and Screen Scrapers, 2nd Edition will show you how to create simple programs with PHP/CURL to mine, parse, and archive online data.",
+    "date": "March 2012"
   },
   {
-    "link": "https://nostarch.com/artofr.htm",
     "name": "Art of R Programming",
-    "author": "Unknown"
+    "link": "https://nostarch.com/artofr.htm",
+    "author": "Norman Matloff",
+    "summary": "R is the world's most popular programming language for statistical computing. Whether you're doing academic research, designing aircraft, or forecasting the weather, The Art of R Programming is your guide to harnessing the power of R.",
+    "date": "October 2011"
   },
   {
-    "link": "https://nostarch.com/ruby",
     "name": "Book of Ruby",
-    "author": "Book of Ruby"
+    "link": "https://nostarch.com/ruby",
+    "author": "Huw Collingbourne",
+    "summary": "Cut through those programming conventions and blaze your own trail with The Book of Ruby. From methods to metaprogramming, gain the skills you need to master the world's most fun programming language with this hands-on introduction.",
+    "date": "July 2011"
   },
   {
-    "link": "https://nostarch.com/lyah.htm",
     "name": "Learn You a Haskell for Great Good!",
-    "author": "Unknown"
+    "link": "https://nostarch.com/lyah.htm",
+    "author": "Miran Lipovača",
+    "summary": "Haskell is weird and wonderful. This illustrated guide makes it hilarious too. Monads included.",
+    "date": "April 2011"
   },
   {
-    "link": "https://nostarch.com/assembly2.htm",
     "name": "Art of Assembly Language, 2nd Edition",
-    "author": "Unknown"
+    "link": "https://nostarch.com/assembly2.htm",
+    "author": "Randall Hyde",
+    "summary": "Thoroughly updated and revised, The Art of Assembly Language, 2nd Edition leverages your knowledge of high level programming languages to teach you to write powerful, portable, and efficient assembly code.",
+    "date": "March 2010"
   },
   {
-    "link": "https://nostarch.com/tcpip.htm",
     "name": "TCP/IP Guide",
-    "author": "Unknown"
+    "link": "https://nostarch.com/tcpip.htm",
+    "author": "Charles M. Kozierok",
+    "summary": "The TCP/IP Guide is a must-have addition to the libraries of internetworking students, educators, networking professionals, and those working toward certification.",
+    "date": "October 2005"
   },
   {
-    "link": "https://nostarch.com/codecraft",
-    "name": "Code Craft",
-    "author": "Unknown"
-  },
-  {
-    "link": "https://nostarch.com/rubyex",
     "name": "Ruby by Example",
-    "author": "Ruby by Example"
+    "link": "https://nostarch.com/rubyex",
+    "author": "Kevin C. Baird",
+    "summary": "Ruby by Example shows you how to take advantage of Ruby as you explore Ruby's fundamental concepts in action.",
+    "date": "June 2007"
   },
   {
-    "link": "https://nostarch.com/debugging.htm",
     "name": "Art of Debugging",
-    "author": "Unknown"
+    "link": "https://nostarch.com/debugging.htm",
+    "author": "Norman Matloff and Peter Jay Salzman",
+    "summary": "Whether you dread the thought of debugging your programs or simply want to improve your current debugging efforts, you'll find a valuable ally in The Art of Debugging.",
+    "date": "September 2008"
   },
   {
-    "link": "https://nostarch.com/tlpi",
+    "name": "Code Craft",
+    "link": "https://nostarch.com/codecraft",
+    "author": "Pete Goodliffe",
+    "summary": "Code Craft will help take your programming beyond writing correct code to writing great code.",
+    "date": "December 2006"
+  },
+  {
     "name": "Linux Programming Interface",
-    "author": "Unknown"
+    "link": "https://nostarch.com/tlpi",
+    "author": "Michael Kerrisk",
+    "summary": "The Linux Programming Interface is a comprehensive reference to the Linux API for experienced system programmers, as well as an introductory guide to these low-level interfaces for system programming newbies.",
+    "date": "October 2010"
   },
   {
-    "link": "https://nostarch.com/lisp.htm",
     "name": "Land of Lisp",
-    "author": "Learn Lisp by writing games. Yes, actual games. Yes, actual Lisp."
+    "link": "https://nostarch.com/lisp.htm",
+    "author": "Conrad Barski, M.D.",
+    "summary": "Learn Lisp by writing games. Yes, actual games. Yes, actual Lisp.",
+    "date": "October 2010"
   },
   {
-    "link": "https://nostarch.com/ghpython.htm",
     "name": "Gray Hat Python",
-    "author": "Unknown"
+    "link": "https://nostarch.com/ghpython.htm",
+    "author": "Justin Seitz",
+    "summary": "Security analysts write code too. This is the Python book they've been waiting for.",
+    "date": "April 2009"
   },
   {
-    "link": "https://nostarch.com/wcruby.htm",
     "name": "Wicked Cool Ruby Scripts",
-    "author": "Wicked Cool Ruby Scripts"
+    "link": "https://nostarch.com/wcruby.htm",
+    "author": "Steve Pugh",
+    "summary": "Wicked Cool Ruby Scripts will teach you how to automate repetitive tasks using Ruby, one of the most powerful and easy-to-use programming languages around.",
+    "date": "December 2008"
   }
 ]

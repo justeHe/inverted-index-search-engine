@@ -105,6 +105,12 @@
         font-size: 12px;
     }
 
+    .summary {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
     /* 空结果 */
     .empty {
         text-align: center;
@@ -138,6 +144,7 @@
     <div class="card">
         <div class="title">{{ r.name }}</div>
         <div class="author">👤 {{ r.author }}</div>
+        <div class="summary">{{ r.summary }}</div>
         <div class="link">
             🔗 <a href="{{ r.url }}" target="_blank">Visit</a>
         </div>
